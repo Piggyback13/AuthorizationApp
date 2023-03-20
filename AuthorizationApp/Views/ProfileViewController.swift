@@ -16,7 +16,7 @@ final class ProfileViewController: UIViewController {
     var viewModel: ProfileViewModel?
     
     // MARK: - Internal variables
-    private lazy var nameLabel: UILabel = {
+    private var nameLabel: UILabel = {
         var label = UILabel()
         label.font.withSize(20)
         label.textColor = .black
@@ -24,7 +24,7 @@ final class ProfileViewController: UIViewController {
         return label
     }()
     
-    private lazy var exitButton: UIButton = {
+    private var exitButton: UIButton = {
         var button = UIButton(type: .custom)
         button.setTitle("Выйти из кабинета", for: .normal)
         button.setTitleColor(.white, for: .normal)

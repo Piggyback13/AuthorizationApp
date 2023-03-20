@@ -107,6 +107,7 @@
 		9B7F1C9729A8E2A4004BBFB6 /* AuthorizationApp */ = {
 			isa = PBXGroup;
 			children = (
+				9BBC919429C5E77C0071B2CF /* Services */,
 				9B6A5B6A29AA54A100073176 /* Coordinators */,
 				9BD36F7429AA2AFB00776FF4 /* ViewModels */,
 				9BD36F7329AA2AEE00776FF4 /* Views */,
@@ -117,6 +118,13 @@
 				9B7F1CA629A8E2A5004BBFB6 /* Info.plist */,
 			);
 			path = AuthorizationApp;
+			sourceTree = "<group>";
+		};
+		9BBC919429C5E77C0071B2CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9BD36F7229AA2AEA00776FF4 /* Models */ = {

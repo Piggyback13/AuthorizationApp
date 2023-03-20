@@ -20,7 +20,7 @@ final class LoginViewController: UIViewController {
     var viewModel: LoginViewModel?
     
     // MARK: - Internal variables
-    private lazy var loginLabel: UILabel = {
+    private var loginLabel: UILabel = {
         var label = UILabel()
         label.text = "Логин"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -28,7 +28,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private lazy var loginTF: UITextField = {
+    private var loginTF: UITextField = {
         var textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.placeholder = "Введите логин..."
@@ -38,7 +38,7 @@ final class LoginViewController: UIViewController {
         return textField
     }()
     
-    private lazy var passwordLabel: UILabel = {
+    private var passwordLabel: UILabel = {
         var label = UILabel()
         label.text = "Пароль"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private lazy var passwordTF: UITextField = {
+    private var passwordTF: UITextField = {
         var textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.placeholder = "Введите пароль..."
@@ -57,7 +57,7 @@ final class LoginViewController: UIViewController {
         return textField
     }()
     
-    private lazy var captchaLabel: UILabel = {
+    private var captchaLabel: UILabel = {
         var label = UILabel()
         label.text = "Капча"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -65,12 +65,12 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private lazy var captchaImgView: UIImageView = {
+    private var captchaImgView: UIImageView = {
         var imageView = UIImageView()
         return imageView
     }()
     
-    private lazy var captchaTF: UITextField = {
+    private var captchaTF: UITextField = {
         var textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.placeholder = "Введите капчу..."
@@ -80,7 +80,7 @@ final class LoginViewController: UIViewController {
         return textField
     }()
     
-    private lazy var loginButton: UIButton = {
+    private var loginButton: UIButton = {
         var button = UIButton(type: .custom)
         button.setTitle("Войти", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -91,7 +91,7 @@ final class LoginViewController: UIViewController {
         return button
     }()
     
-    private lazy var statusLabel: UILabel = {
+    private var statusLabel: UILabel = {
         var label = UILabel()
         label.font.withSize(20)
         label.textColor = .red
